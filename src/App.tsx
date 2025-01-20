@@ -2,6 +2,7 @@ import clsx from "clsx";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react"
 import { Logo } from "./components/logo";
+import { Credits } from "./components/credits";
 
 function App() {
   const [isExpended, setIsExpended] = useState(false) ;
@@ -9,6 +10,7 @@ function App() {
 
   return (
     <section className="w-full h-dvh flex text-white justify-center items-center">
+      <Credits />
       <AnimatePresence mode="popLayout">
         {
           isExpended ?
